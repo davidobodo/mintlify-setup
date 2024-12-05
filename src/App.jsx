@@ -1,13 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { MintlifyWidget } from "@mintlify/widget-react";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<>
 			<h1>Sample Mintlify react widget setup</h1>
+			<MintlifyWidget
+				connection={{
+					apiKey: "your api key",
+				}}
+				display={{
+					trigger: {
+						iconOnly: true,
+						type: "button",
+					},
+					isDarkMode: false,
+				}}
+			/>
 		</>
 	);
 }
