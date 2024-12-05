@@ -1,0 +1,13 @@
+diff --git a/dist/widget-react.js b/dist/widget-react.js
+index a21c06ab766867f16c7bebefc48c626b46edb1d5..482cc94c5d3289c556295490618768e3360d671a 100644
+--- a/dist/widget-react.js
++++ b/dist/widget-react.js
+@@ -5,7 +5,7 @@ function u(i) {
+   const [d, l] = o(!1);
+   return e(() => {
+     const t = document.createElement("script");
+-    return t.id = "mintlify-widget", document.getElementById("mintlify-widget") || (t.src = "https://unpkg.com/@mintlify/widget@^0", t.onload = () => l(!0), document.head.appendChild(t)), () => {
++    return t.id = "mintlify-widget", document.getElementById("mintlify-widget") || (t.src = "https://unpkg.com/@mintlify/widget@^0", t.crossOrigin = "anonymous", t.onload = () => l(!0), document.head.appendChild(t)), () => {
+       document.getElementById("mintlify-widget") && document.head.removeChild(t);
+     };
+   }, []), e(() => {

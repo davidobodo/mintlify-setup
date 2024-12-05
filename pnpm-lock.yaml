@@ -4,13 +4,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@mintlify/widget-react@0.0.11':
+    hash: rocwtrzjuxfulx52lmrkv6w3ry
+    path: patches/@mintlify__widget-react@0.0.11.patch
+
 importers:
 
   .:
     dependencies:
       '@mintlify/widget-react':
         specifier: ^0.0.11
-        version: 0.0.11
+        version: 0.0.11(patch_hash=rocwtrzjuxfulx52lmrkv6w3ry)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -1562,7 +1567,7 @@ snapshots:
 
   '@mintlify/widget-props@0.0.5': {}
 
-  '@mintlify/widget-react@0.0.11':
+  '@mintlify/widget-react@0.0.11(patch_hash=rocwtrzjuxfulx52lmrkv6w3ry)':
     dependencies:
       '@mintlify/widget-props': 0.0.5
       react: 18.3.1
